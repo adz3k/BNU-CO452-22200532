@@ -10,7 +10,7 @@ public class App
         System.out.println("CO452 Programming Concepts 2022/23");
         System.out.println("==================================");
         System.out.println();
-        System.out.println(" by NicholasArmstrong LOL");
+        System.out.println(" by Armstrong");
         System.out.println();
 
     }
