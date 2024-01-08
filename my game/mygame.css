@@ -1,0 +1,71 @@
+/* Styling for the game container */
+.game {
+  width: 600px;
+  height: 200px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+/* Styling for the dinosaur element describes the height and witdth of the dinosaur */
+#dino {
+  width: 50px;
+  height: 50px;
+  /* Set the background image for the dinosaur */
+  background-image: url(img/trex.png);
+  background-size: 50px 50px;
+  position: relative;
+  top: 150px; /* Initial position from the top */
+}
+
+/* Animation for the dinosaur jump  how long the dinosaur is in the air for*/
+.jump {
+  animation: jump 0.3s linear;
+}
+
+/* Keyframes for the dinosaur jump animation describes how high the dinosaur jumps */
+@keyframes jump {
+  0% {
+    top: 150px; /* Initial position */
+  }
+
+  30% {
+    top: 130px; /* Jump height at 30% of the animation */
+  }
+
+  50% {
+    top: 80px; /* Jump height at 50% of the animation */
+  }
+
+  80% {
+    top: 130px; /* Jump height at 80% of the animation */
+  }
+
+  100% {
+    top: 150px; /* Return to the initial position */
+  }
+}
+
+/* Styling for the cactus element defines the size width and position it will be in */
+#cactus {
+  width: 20px;
+  height: 40px;
+  position: relative;
+  top: 110px;
+  left: 580px;
+  /* Set the background image for the cactus */
+  background-image: url(img/cactus.png);
+  background-size: 20px 40px;
+  /* Animation for the cactus movement */
+  animation: block 1s infinite linear;
+}
+
+/* Keyframes for the cactus movement animation where the cactus starts at */
+@keyframes block {
+  0% {
+    left: 580px; /* Initial position */
+  }
+
+  100% {
+    left: -20px; /* Move to the left end */
+  }
+}
